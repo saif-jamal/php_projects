@@ -1,0 +1,12 @@
+#message_name_error,
+#message_email_error,
+#message_pass_error{
+    color: rgb(0, 0, 0) !important;
+}
+body{
+  overflow: hidden !important;
+}
+.main{
+  position: relative;
+ top: -25% !important;
+}

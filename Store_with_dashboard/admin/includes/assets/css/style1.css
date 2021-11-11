@@ -1,0 +1,197 @@
+body::before{
+    content: "";
+    display: block;
+    height: 60px;
+}
+*{
+    transition: all 0.5s ease ;
+    perspective-origin: 500px;
+}
+.aside-nav{
+    width: 120px;
+    text-align: center;
+    position: fixed !important ;
+    border-radius: 60px;
+    top: 10%;
+    left: 1%;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 1px whitesmoke;
+    z-index: 2000;
+}
+.aside-nav>img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50% !important;
+    border: solid 1px white;
+    cursor: pointer;
+}
+
+.aside-nav i,.aside-nav h3{
+    cursor: pointer;
+}
+.drow-img {
+    position: relative;
+    width: 100%;
+}
+
+.drow-img img{
+    /* margin-top: ; */
+    width: 110px;
+    height: 110px;
+    transition: 0.5s ease all;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+@keyframes spin{
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.card{
+    perspective: 1000px;
+}
+.card:hover{
+      transform: scale(1.1);
+      box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.918);
+}
+
+.aside-nav{
+animation: jumber 1s ease-in-out infinite alternate;
+}
+.aside-nav:hover{
+   animation-play-state: paused;
+    }
+@keyframes jumber {
+    from{
+        top: 10%;
+    }
+    to{
+        top: 13%;
+    }
+}
+
+.close{
+    left: 0%;
+    top: 0%;
+    cursor: pointer;
+}
+.close:hover{
+  color: red !important;
+}
+
+/* slide images  */
+#slider{
+    opacity:1;
+    height: 500px !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slide-images{
+      width: 100%;
+      height: 500px !important;
+  }
+
+  /* circle images  */
+  .cir-img{
+      border-radius: 50%;
+      overflow: hidden;
+      width: 200px;
+      height: 200px;
+      position: relative;
+  }
+  .cir-img img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+  }
+  .slide-up-img{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 100%;
+      background-color: rgb(33,37,41);
+      
+  }
+  .cir-img:hover .inside-put{
+       transform: translateY(-60px)
+  }
+  .cir-img:hover .slide-up-img{
+    top: 40%;
+   }
+   .footer{
+       height: 200px !important;
+   }
+   .footer:hover{
+       transform: scale(1) !important ; 
+   }
+   #admin_imag{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+  }
+  .dashboaard_user{
+    border-bottom:solid 2px rgb(57, 219, 248) !important;
+  }
+  .show_admin{
+      border-radius: 10px;
+      right: -200%;
+      top: 10%;
+      z-index: 2001 !important;
+      box-shadow: 0px 0px 10px 3px white;
+
+  }
+  .show_admin .card,.show_admin .card img{
+     width: 120px;
+     height: 120px;
+  }
+
+  /* admines  */
+  .show_close_admin{
+      display: flex;
+      position: fixed;
+      top: 12%;
+      right: 0%;
+      cursor: pointer;
+      z-index: 2003 !important;
+  }
+  .adm{
+      top: -40%;
+  }
+#close_ad{
+    display: none;
+}
+  .sh_ad{
+    right: 0%;
+  }
+
+.show_aside_menu{
+    position: fixed;
+    top: 8%;
+    left: 0;
+}
+
+.show_aside_menu i{
+    display:none;
+}
+@media only screen and (max-width:1580px){
+    #sh_aside_menu{
+        display:inline-block;
+    }
+    .aside-nav{
+        left: -100%;
+    }
+}
+.sh_menu{
+    left: 1%;
+  }
+  .fixed-top{
+      z-index: 3000 !important;
+  }

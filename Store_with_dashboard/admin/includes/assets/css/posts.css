@@ -1,0 +1,82 @@
+.card{
+    position: relative;
+}
+.img_user_post_it{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: -4%;
+    left: -2%;
+    border-radius: 50%;
+    border: 2px solid rgb(33,37,41);
+    overflow: hidden;
+}
+.img_user_post_it .img_posts_user{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    cursor: pointer;
+}
+.slide_up{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.slide_up p{
+    font-size: 12px;
+}
+.slide_up p:nth-child(2){
+    margin-top: -20px;
+}
+.img_user_post_it:hover {
+    box-shadow: 0px 0px 20px 2px white;
+}
+.img_user_post_it:hover  .img_posts_user{
+    transform: translateY(-20px);
+}
+.img_user_post_it:hover .slide_up{
+    display: block;
+}
+.delete_posts{
+    position: absolute;
+    top: -2%;
+    right: -2%;
+    display: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.card:hover .delete_posts{
+    display: block;
+    transform: scale(1.1);
+}
+.catogries_sh{
+    width: auto;
+    max-width: 130px;
+    border-radius: 20px;
+   cursor: pointer;
+}
+.catogries_sh:hover{
+  background-color: rgb(129, 160, 194) !important;
+}
+.catogries_sh:hover p{
+    color: white !important;
+}
+.card-text{
+    overflow-y: scroll;
+    max-height: 400px !important;
+}
+.card-img-top{
+    max-height: 350px !important;
+}
+.card:hover{
+    transform: scale(1.01) !important;
+}
+.posttttt{
+    border-bottom: 5px solid rgb(85, 250, 242);
+}
